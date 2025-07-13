@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- Document Type Declaration -->
+<html lang="pt-br"> <!-- HTML Starts & Page Language -->
+<head> <!-- Metadata -->
+    <meta charset="UTF-8">  <!-- Characters Kit -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive Design -->
+    <title>Layout #3 - Juliana Moreira</title> <!-- Page Title -->
+    <style> /* CSS Starts & Defines Visual Styles */
+        body {
+            background: #f7a1cf; /* Background's Fallback Color */
+            background: linear-gradient(90deg, rgba(247, 161, 207, 1) 0%, rgba(255, 106, 0, 1) 50%, rgba(215, 247, 87, 1) 100%); /* Background's Gradient */
+            display: flex; /* Makes 'body' Flexible */
+            flex-direction: column; /* Organizes Items on a Vertical Column*/
+            align-items: center; /* Centers Items Horizontaly */
+            min-height: 100vh; /* Centers 'body' Verticaly */
+            margin: 0; /* Removes 'body's' Margin */
+        }
+        
+        .container { /* Selects Container */
+            width: 80%; /* Container's Width = 80% of Screen Width */
+            margin-top: 70px; /* Adjusts Top Margin Based on Side Margins */
+            min-height: 50px; /* Container's Minimal Height */
+            background: none; /* Background's Fallback Color (transparent) */
+            border: none; /* Removes Container's Border */
+            display: flex; /* Makes Container Flexible */
+            flex-direction: column; /* Organizes Sections on a Vertical Column*/
+            align-items: center; /* Centers Sections Horizontaly */
+        }
+        
+        .section-header,
+        .section-1,
+        .section-2 {
+            background: #FFC9E3; /* Sections' Fallback Collor */
+            background: linear-gradient(90deg, rgba(255, 201, 227, 1) 0%, rgba(255, 223, 194, 1) 50%, rgba(243, 255, 189, 1) 100%); /* Sections' Gradient */
+            border: none; /* Removes Sections' Border */
+            margin-bottom: 20px; /* Sets Space Between Sections */
+            width: 100%; /* Sections Width = 100% of Container's Width */
+            padding: 20px; /* Adds Margin Inside Sections */
+            box-sizing: border-box; /* Considers Border & Padding on Width */
+            
+        }
+            
+        .section-1 {
+            min-height: 200px; /* Sections' Minimal Height */
+        }            
+            
+        .section-2 {
+            min-height: 70px; /* Sections' Minimal Height */
+        }
+
+        .site-header { /* Selects Header's Items */
+            display: flex; /* Makes Header Flexible */
+            justify-content: space-between; /* Sets Space Between Logo & Menu */
+            align-items: center; /* Centers Items Verticaly */
+            width: 100%; /* Header's Items Width */
+            box-sizing: border-box; /* Considers Border & Padding on Width */
+        }
+
+        .logo-area { /* Selects Logo */
+            background: #f7a1cf; /* Logo's Fallback Color */
+            background: linear-gradient(90deg, rgba(247, 161, 207, 1) 0%, rgba(255, 106, 0, 1) 100%); /* Logo's Gradient */
+            width: 250px; /* Logo's Width */
+            height: 100px; /* Logo's Height */
+        }
+
+        .main-nav { /* Selects Navigation Bar */
+            padding: 10px; /* Adds Margin Inside Nav Bar */
+            display: flex; /* Makes Nav Bar Flexible */
+            justify-content: space-around; /* Distributes Menu Items Properly */
+        }
+
+        .menu-item { /* Selects Each Menu Item */
+            min-height: 20px; /* Menu Items Minimal Height */
+            padding: 10px 25px; /* Adds Margin Inside Menu Items */
+            margin: 0 5px; /* Space Between Menu Items */
+            text-align: center; /* Aligns Text Inside Menu Items */
+            border: 1px solid; /* Sets Menu Items Border */
+            color: #FF6A00; /* Sets Menu Items Border Color */
+        }
+
+    </style> <!-- CSS Closes -->
+</head> <!-- Head Closes -->
+<body> <!-- Body Starts & Shows Visible Content -->
+    <div class="container"> <!-- Starts Container -->
+    <section class="section-header"> <!-- Defines Header's Section -->
+        <header class="site-header"> <!-- Defines Header -->
+            <div class="logo-area"></div> <!-- Reserves Logo's Space -->
+            <nav class="main-nav"> <!-- Defines Nav Bar -->
+                <div class="menu-item">✶</div> <!-- Defines Menu Item #1 -->
+                <div class="menu-item">✷</div> <!-- Defines Menu Item #2 -->
+                <div class="menu-item">✸</div> <!-- Defines Menu Item #3 -->
+                <div class="menu-item">✵</div> <!-- Defines Menu Item #4 -->
+            </nav> <!-- Navigator Closes -->
+        </header> <!-- Header Closes -->
+        </section>
+        <section class="section-1"></section> <!-- Defines Section #1 -->
+        <section class="section-2"></section> <!-- Defines Section #2 -->
+    </div> <!-- Div Closes -->
+</body> <!-- Body Closes -->
+</html> <!-- HTML Closes -->
